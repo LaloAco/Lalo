@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eduardo Acosta | Portfolio</title>
+  <style>
+    /* Base Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+     background-image: url('black.jpg'); /* change this path */
+    background-size: cover;      /* makes the image cover the whole screen */
+    background-repeat: no-repeat; /* prevents tiling */
+    background-position: center;  /* centers the image */
+    color: #333;
+    line-height: 1.6;
+    }
+    a {
+      color: #027040;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      background-color: #027040;
+      color: white;
+      padding: 5px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header img {
+      border: 5px solid #363636;
+      width: 75px;
+      height: 75px;
+      border-radius: 8px;
+    }
+    nav {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      font-weight: bold;
+      font-size: 1rem;
+      color: white;
+    }
+
+    /* Container */
+    .container {
+      width: 85%;
+      max-width: 1100px;
+      margin: 40px auto;
+    }
+
+    /* Intro Section with Image + Text Side-by-Side */
+    #intro-wrapper {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    #intro-photo {
+      flex: 1 1 300px;
+      max-width: 400px;
+    }
+    #intro-photo img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    #intro-text {
+      flex: 2 1 400px;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    /* Sections */
+    section {
+      background: white;
+      padding: 25px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+    h2 {
+      margin-top: 0;
+      color: #027040;
+      font-weight: 700;
+    }
+
+    /* Skills */
+    #skills p {
+      margin: 8px 0;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Projects */
+    ul {
+      padding-left: 20px;
+      list-style-type: disc;
+      color: #444;
+    }
+    li {
+      margin-bottom: 1.2em;
+      text-align: left;
+    }
+    strong {
+      color: #027040;
+    }
+
+    /* Contact */
+    #contact a {
+      color: #027040;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      background: #027040;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9rem;
+      margin-top: 80px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      #intro-wrapper {
+        flex-direction: column;
+      }
+      nav {
+        justify-content: center;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="EA.png" alt="Eduardo Acosta Logo" />
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Intro with photo and text side by side -->
+    <div id="intro-wrapper">
+      <div id="intro-photo">
+        <img src="lalo.jpg" alt="Eduardo Acosta" />
+      </div>
+      <div id="intro-text">
+        <h2>About Me</h2>
+        <p>
+          My name is Eduardo Acosta, and I'm an aspiring data scientist currently studying computer science at Northern Illinois University.
+          I have a strong passion for uncovering insights from data and using those insights to solve real-world problems that can make a positive impact.
+          Throughout my studies, I've developed skills in programming, statistics, and machine learning, which I’m eager to apply in practical settings.
+          I’m excited for the journey ahead, ready to learn and grow as I work towards my career goals. Thanks for visiting my page! I’m looking forward to what the future holds and the opportunities that lie ahead.
+        </p>
+      </div>
+    </div>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p><strong>Programming Languages:</strong> C++, SQL, HTML, JavaScript, Julia, Python, Assembly, Unix/Linux shell scripting.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>MelodyMash (HTML, JavaScript, SQL, PHP)</strong> - A fun and easy-to-use karaoke queue web app designed to streamline karaoke nights for DJs and crowds alike. Users can browse songs, add themselves to the queue, and even pay to bump up their spot. The simple dashboard helps DJs manage requests efficiently, making events more organized and enjoyable.
+        </li>
+        <li>
+          <strong>PQuote (HTML, JavaScript, SQL, PHP)</strong> - A web-based tool allowing users to customize parts and submit detailed orders via an interactive form. It includes automated email notifications for order updates and an admin dashboard for managing employee data and calculating commissions, enhancing workflow and operational efficiency.
+        </li>
+        <li>
+          <strong>SimpleSim (C++)</strong> - A functional simulator that emulates a basic instruction set architecture, accurately executing simple machine-language instructions. It models low-level computer behavior, including instruction sequencing and memory access, showcasing core concepts of computer architecture and assembly programming.
+        </li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>Northern Illinois University (NIU)</strong></p>
+      <li> Bachelors in Computer Science</li>
+      <li> Minor in General Mathematics</li>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:laloacodelreal@gmail.com">laloacodelreal@gmail.com</a></p>
+      <p>LinkedIn: <a href="www.linkedin.com/in/eduardoaco" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/eduardoaco</a></p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Eduardo Acosta | All Rights Reserved
+  </footer>
+</body>
+</html>
